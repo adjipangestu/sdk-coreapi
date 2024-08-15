@@ -14,7 +14,7 @@
             "email": "adji.pangestu@pjnhk.go.id"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "prefer-stable": true,
     "require": {
         "php": "^7.4|^8.0"
