@@ -14,14 +14,18 @@ class CoreApi
     private $tokenCookieName = 'access_token';
     private $accessToken = null;
     private $tokenExpiry = null;
+    private $username;
+    private $password;
 
-    public function __construct($clientId, $clientSecret, $isProduction = true, $grantType = 'client_credentials', $tokenCookieName = 'access_token')
+    public function __construct($clientId, $clientSecret, $isProduction = true, $grantType = 'client_credentials', $tokenCookieName = 'access_token', $username = null, $password = null)
     {
         $this->clientId = $clientId;
         $this->clientSecret = $clientSecret;
         $this->grantType = $grantType;
         $this->isProduction = $isProduction;
         $this->tokenCookieName = $tokenCookieName;
+        $this->username = $username;
+        $this->password = $password;
         $this->loadTokenFromCookie();
     }
 
