@@ -1,0 +1,22 @@
+{
+    "name": "rsjpdharapankita/sdk-coreapi",
+    "description": "SDK Core API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rsjpdharapankita\\Simrs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adji Pangestu",
+            "email": "adji.pangestu@pjnhk.go.id"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0"
+    }
+}
